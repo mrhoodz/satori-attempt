@@ -16,9 +16,9 @@ export const head: DocumentHead = () => {
 
   // const domain = URL()
   return {
-    title: "beginning of the end",
+    title: "using satori in qwik",
     meta: [
-      { name: "xfd", content: "dsadasdasd" },
+      { name: "descrition", content: "Description of the page" },
       {
         property: "og:image",
         content: "https://satori-attempt-p3lo.vercel.app/sat",
