@@ -18,7 +18,7 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
         <div
           style={{
             position: "relative",
-            backgroundColor: "white",
+            backgroundColor: "blue",
             color: "black",
             height: "100%",
             width: "100%",
