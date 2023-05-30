@@ -9,6 +9,7 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
 
     // ?size=<size>
     const hasSize = searchParams.has("size");
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const size = hasSize
       ? parseInt(searchParams.get("size")?.slice(0, 4) || "16", 10)
       : 16;
@@ -51,8 +52,8 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
         </div>
       ),
       {
-        width: size,
-        height: size,
+        width: 200,
+        height: 200,
       }
     );
     send(response as Response);
