@@ -21,7 +21,7 @@ export const head: DocumentHead = () => {
       { name: "xfd", content: "dsadasdasd" },
       {
         property: "og:image",
-        content: "https://",
+        content: "https://satori-attempt.vercel.app",
       },
     ],
   };
