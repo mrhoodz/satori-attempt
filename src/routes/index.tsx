@@ -1,25 +1,28 @@
-import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
+  useVisibleTask$(() => {});
+
   return (
     <>
-      <h1>Hi 👋</h1>
-      <p>
-        Can't wait to see what you build with qwik!
-        <br />
-        Happy coding.
-      </p>
+      <h1>Hello world</h1>
     </>
   );
 });
 
-export const head: DocumentHead = {
-  title: 'Welcome to Qwik',
-  meta: [
-    {
-      name: 'description',
-      content: 'Qwik site description',
-    },
-  ],
+export const head: DocumentHead = () => {
+  // const domain = useLocation().url.origin
+
+  // const domain = URL()
+  return {
+    title: "beginning of the end",
+    meta: [
+      { name: "xfd", content: "dsadasdasd" },
+      {
+        property: "og:image",
+        content: "https://",
+      },
+    ],
+  };
 };
