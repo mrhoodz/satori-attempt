@@ -2,7 +2,9 @@ import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 export default component$(() => {
-  useVisibleTask$(() => {});
+  useVisibleTask$(() => {
+    console.log("testing 1 2");
+  });
 
   return (
     <>
@@ -12,9 +14,6 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = () => {
-  // const domain = useLocation().url.origin
-
-  // const domain = URL()
   return {
     title: "using satori in qwik",
     meta: [

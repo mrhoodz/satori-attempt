@@ -9,6 +9,7 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
 
     // ?size=<size>
     const hasSize = searchParams.has("size");
+    //l am manually setting the height and width of the image
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const size = hasSize
       ? parseInt(searchParams.get("size")?.slice(0, 4) || "16", 10)
@@ -19,7 +20,7 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
         <div
           style={{
             position: "relative",
-            backgroundColor: "blue",
+            backgroundColor: "pink",
             color: "black",
             height: "100%",
             width: "100%",
@@ -29,29 +30,13 @@ export const onRequest: RequestHandler = async ({ status, send, url }) => {
             justifyContent: "center",
             flexDirection: "column",
             flexWrap: "nowrap",
-            fontSize: "30px",
           }}
         >
-          gg
-          <div
-            style={{
-              // position: "absolute",
-              backgroundColor: "red",
-
-              // display: "flex",
-              // alignItems: "center",
-              // justifyContent: "center",
-              // justifyItems: "center",
-              // padding: 4,
-              height: "20px",
-              width: "20px",
-            }}
-          >
-            hhfdhfdh
-          </div>
+          Text
         </div>
       ),
       {
+        //manually setting height and with
         width: 200,
         height: 200,
       }
