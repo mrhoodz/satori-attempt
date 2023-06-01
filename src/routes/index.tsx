@@ -1,14 +1,26 @@
 import { component$, useVisibleTask$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { type DocumentHead } from "@builder.io/qwik-city";
+
+// export const useImageGen = routeLoader$(async () => {
+//   // This code runs only on the server, after every navigation
+
+//   const res = await fetch("http://localhost:5173//api/imageGen");
+
+//   const resFinal = await res.json();
+
+//   console.log(resFinal);
+// });
 
 export default component$(() => {
+  const imageGen: any = "useImageGen()";
   useVisibleTask$(() => {
-    console.log("testing 1 2");
+    console.log(imageGen);
   });
 
   return (
     <>
-      <h1>Hello world</h1>
+      <h1>{"imageGen"}</h1>
+      <img src="http://localhost:5173/api/imageGen" alt="jdjdj" />
     </>
   );
 });
