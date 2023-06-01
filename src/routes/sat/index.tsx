@@ -4,7 +4,7 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 export const onGet: RequestHandler = async (requestEvent) => {
   // Respond with a JSON object
 
-  const response = { hello: "worlddffdsfsdd" };
+  const response = { hello: "Coming from sat" };
 
   requestEvent.json(200, response);
 };

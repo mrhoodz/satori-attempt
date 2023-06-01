@@ -4,7 +4,7 @@ import { routeLoader$, type DocumentHead } from "@builder.io/qwik-city";
 export const useImageGen = routeLoader$(async () => {
   // This code runs only on the server, after every navigation
 
-  const res = await fetch("https://satori-attempt-p3lo.vercel.app/sat");
+  const res = await fetch("https://satori-attempt-p3lo.vercel.app/imageGen");
 
   const resFinal = await res.json();
 
