@@ -52,9 +52,9 @@ export const onGet: RequestHandler = async (requestEvent) => {
   // Respond with a JSON object
   const res = await fetch("https://satori-attempt-p3lo.vercel.app/sat");
 
-  const resFinal = await res.json();
+  const resFinalp = await res.json();
 
-  const response = resFinal;
+  const response = await resFinalp;
 
   requestEvent.json(200, response);
 };
