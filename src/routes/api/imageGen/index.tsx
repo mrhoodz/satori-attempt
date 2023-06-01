@@ -50,7 +50,7 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 
 export const onGet: RequestHandler = async (requestEvent) => {
   // Respond with a JSON object
-  const res = await fetch("http://localhost:5173/sat");
+  const res = await fetch("https://satori-attempt-p3lo.vercel.app/sat");
 
   const resFinal = await res.json();
 
