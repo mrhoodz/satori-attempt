@@ -7,6 +7,11 @@ import wasm from "vite-plugin-wasm";
 
 export default defineConfig(() => {
   return {
+    optimizeDeps: {
+      exclude: [
+        "@vercel/og"
+      ]
+    },
     plugins: [wasm(), qwikCity(), qwikVite(), tsconfigPaths(), qwikReact()],
     preview: {
       headers: {
