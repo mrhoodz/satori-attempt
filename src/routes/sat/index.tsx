@@ -1,6 +1,6 @@
 /** @jsxImportSource react */
 import type { RequestHandler } from "@builder.io/qwik-city";
-import { ImageResponse } from "@vercel/og/dist/";
+import { ImageResponse } from "@vercel/og";
 
 // Called with every HTTP request (regardless of method)
 // export const onGet: RequestHandler = async (requestEvent) => {
