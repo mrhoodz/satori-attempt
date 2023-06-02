@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@vercel/og": "^0.5.6",
-    "satori": "^0.9.1"
+    "satori": "^0.9.1",
+    "vite-plugin-wasm": "^3.2.2"
   }
 }
