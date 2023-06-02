@@ -67,7 +67,7 @@ export const onRequest: RequestHandler = async ({ status, send }) => {
           >
             <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
           </svg>
-          <div style={{ marginTop: 40 }}>This is tino kkk</div>
+          <div style={{ marginTop: 40 }}>This is has fire kkk</div>
         </div>
       ),
       {
