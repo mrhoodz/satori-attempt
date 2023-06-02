@@ -5,7 +5,7 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 // export const useImageGen = routeLoader$(async () => {
 //   // This code runs only on the server, after every navigation
 
-//   const res = await fetch("http://localhost:5173/api/imageGen");
+//   const res = await fetch("http://localhost:5173/sat");
 
 //   const resFinal = await JSON.stringify(res);
 
@@ -26,7 +26,7 @@ export default component$(() => {
     <>
       <h1>heading</h1>
       {/* <p>{JSON.stringify(imageGen.value)}</p> */}
-      <img src="http://localhost:5173/api/imageGen" alt="jdjdj" />
+      <img src="http://localhost:5173/sat" alt="jdjdj" />
     </>
   );
 });
