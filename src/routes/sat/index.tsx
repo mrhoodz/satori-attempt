@@ -1,6 +1,7 @@
 /** @jsxImportSource react */
 import type { RequestHandler } from "@builder.io/qwik-city";
 import { ImageResponse } from "@vercel/og";
+// import * as wasmModule from "../../../node_modules/@vercel/og/dist"
 
 // Called with every HTTP request (regardless of method)
 // export const onGet: RequestHandler = async (requestEvent) => {
@@ -67,14 +68,9 @@ export const onRequest: RequestHandler = async ({ status, send }) => {
           >
             <path d="M37.59.25l36.95 64H.64l36.95-64z"></path>
           </svg>
-          <div style={{ marginTop: 40 }}>Works kkk</div>
+          <div style={{ marginTop: 40, color: "red" }}>Works kkk</div>
         </div>
-      ),
-      {
-        //manually setting height and with
-        width: 200,
-        height: 200,
-      }
+      )
     );
     send(response as Response);
   } catch (e: any) {

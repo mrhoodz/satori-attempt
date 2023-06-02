@@ -4,15 +4,16 @@ import { qwikCity } from "@builder.io/qwik-city/vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 import { qwikReact } from "@builder.io/qwik-react/vite";
 import wasm from "vite-plugin-wasm";
+import topLevelAwait from "vite-plugin-top-level-await";
 
 export default defineConfig(() => {
   return {
+    plugins: [wasm(), topLevelAwait(), qwikCity(), qwikVite(), tsconfigPaths(), qwikReact()],
     optimizeDeps: {
       exclude: [
         "@vercel/og"
       ]
     },
-    plugins: [wasm(), qwikCity(), qwikVite(), tsconfigPaths(), qwikReact()],
     preview: {
       headers: {
         "Cache-Control": "public, max-age=600",
@@ -20,7 +21,5 @@ export default defineConfig(() => {
     },
   };
 });
-// function topLevelAwait(): import("vite").PluginOption {
-//   throw new Error("Function not implemented.");
-// }
+
 
