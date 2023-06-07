@@ -40,6 +40,10 @@ export const head: DocumentHead = () => {
         property: "og:image",
         content: "https://next-satori.vercel.app/api/og",
       },
+      {
+        property: "twitter:image",
+        content: "https://next-satori.vercel.app/api/og",
+      },
     ],
   };
 };
