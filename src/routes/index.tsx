@@ -38,11 +38,25 @@ export const head: DocumentHead = () => {
       { name: "descrition", content: "Description of the page" },
       {
         property: "og:image",
-        content: "https://next-satori.vercel.app/api/og?q2132",
+        content: "https://next-satori.vercel.app/api/og?q2s1s32",
       },
       {
         property: "twitter:image",
-        content: "https://next-satori.vercel.app/api/og?x312321",
+        content: "https://next-satori.vercel.app/api/og?x3s1s2321",
+      },
+
+      //
+      { property: "twitter:card", content: "summary_large_image" },
+      { property: "twitter:url", content: "https://www.realwebsdigital.com/" },
+      {
+        name: "twitter:title",
+        content: "Blah blah blah",
+      },
+
+      {
+        name: "twitter:description",
+        content:
+          "Realwebsdigital is a South African-based design agency that specializes in creating stunning websites, branding and digital marketing solutions.",
       },
     ],
   };
