@@ -26,7 +26,7 @@ export default component$(() => {
     <>
       <h1>headingxxx</h1>
       {/* <p>{JSON.stringify(imageGen.value)}</p> */}
-      <img src="https://next-satori.vercel.app/api/og?ooo" alt="jdjdj" />
+      <img src="https://next-satori.vercel.app/api/og?3219832139" alt="jdjdj" />
     </>
   );
 });
@@ -38,11 +38,11 @@ export const head: DocumentHead = () => {
       { name: "descrition", content: "Description of the page" },
       {
         property: "og:image",
-        content: "https://next-satori.vercel.app/api/og?q",
+        content: "https://next-satori.vercel.app/api/og?q2132",
       },
       {
         property: "twitter:image",
-        content: "https://next-satori.vercel.app/api/og?x",
+        content: "https://next-satori.vercel.app/api/og?x312321",
       },
     ],
   };
