@@ -26,10 +26,7 @@ export default component$(() => {
     <>
       <h1>headingxxx</h1>
       {/* <p>{JSON.stringify(imageGen.value)}</p> */}
-      <img
-        src="https://next-satori.vercel.app/api/og?title=yess finally"
-        alt="jdjdj"
-      />
+      <img src="https://next-satori.vercel.app/api/og" alt="jdjdj" />
     </>
   );
 });
